@@ -45,7 +45,7 @@ def index(request):
     return render(request, 'index.html', context)
 
 def predictnab(request):
-    img = request.FILES['ihsg'].read()
+    img = request.FILES['photo'].read()
     # img = float(request.POST['ihsg'])
     # print >>sys.stderr, 'Goodbye, cruel world!'
     print (img)
