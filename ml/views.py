@@ -26,7 +26,7 @@ def predictNab(clf, img):
         return np.stack(imgs_arr, axis=0)
 
     # read image
-    img = Image.open(img)
+    im = Image.open(img)
     # im = Image.open('/content/drive/MyDrive/WhatsApp Image 2021-08-17 at 12.27.34.jpeg')
     print(im)
     X = preprocess(im,input_size)
