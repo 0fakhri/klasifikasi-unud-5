@@ -52,7 +52,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://i.ibb.co/029GVqt/Screenshot-from-2021-12-13-02-50-38.png)
 
 Tugas Microcredential
 
