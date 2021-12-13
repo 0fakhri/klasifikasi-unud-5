@@ -40,13 +40,14 @@ def predictNab(clf, img):
 
 # Create your views here.
 def index(request):
+    print('index', request)
     context = {
         'css': 'ini link css'
     }
     return render(request, 'index.html', context)
 
 def predictnab(request):
-    print(request)
+    print('request', request)
     # img2 = handle_uploaded_file(request.FILES['photo'])
     img = request.POST.FILES['photo'].read()
     # img = float(request.POST['ihsg'])
