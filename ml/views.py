@@ -8,7 +8,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 import numpy as np
-from somewhere import handle_uploaded_file
+# from somewhere import handle_uploaded_file
 
 #def function here
 def predictNab(clf, img):
@@ -47,8 +47,8 @@ def index(request):
 
 def predictnab(request):
     print(request)
-    img2 = handle_uploaded_file(request.FILES['photo'])
-    img = request.FILES['photo'].read()
+    # img2 = handle_uploaded_file(request.FILES['photo'])
+    img = request.POST.FILES['photo'].read()
     # img = float(request.POST['ihsg'])
     # print >>sys.stderr, 'Goodbye, cruel world!'
     print (img)
