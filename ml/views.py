@@ -49,7 +49,7 @@ def index(request):
 def predictnab(request):
     print('request', request)
     # img2 = handle_uploaded_file(request.FILES['photo'])
-    img = request.POST.FILES['photo'].read()
+    # img = request.POST.FILES['photo'].read()
     # img = float(request.POST['ihsg'])
     # print >>sys.stderr, 'Goodbye, cruel world!'
     print (img)
