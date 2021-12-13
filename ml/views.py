@@ -35,7 +35,7 @@ def predictNab(clf, img):
     nab = labels[np.argmax(y)]
     # print('akurasi :', np.max(y))
     # print('label :', labels[np.argmax(y)])
-  return nab
+    return nab
 
 # Create your views here.
 def index(request):
