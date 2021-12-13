@@ -5,8 +5,8 @@ import tensorflow
 from tensorflow.keras.models import load_model
 
 import requests
-from io import BytesIO 
-import Image
+from PIL import Image
+from io import BytesIO
 import numpy as np
 
 #def function here
