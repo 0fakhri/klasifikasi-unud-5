@@ -47,16 +47,17 @@ def index(request):
     return render(request, 'index.html', context)
 
 def predictnab(request):
-    print('request', request)
+    print('requestnya', request)
     # img2 = handle_uploaded_file(request.FILES['photo'])
     # img = request.POST.FILES['photo'].read()
     # img = float(request.POST['ihsg'])
     # print >>sys.stderr, 'Goodbye, cruel world!'
-    print (img)
+    # print (img)
     unit = float(request.POST['unit'])
     print('unit', unit)
     model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),'my_model_herbal.h5')
     clf = load_model(model_path)
+    print('check--model')
     # result = predictNab(clf, img)
     # print('result = ', result)
     # return JsonResponse({
