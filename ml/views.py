@@ -55,7 +55,7 @@ def predictnab(request):
     # print (img)
     unit = float(request.POST['unit'])
     print('unit', unit)
-    model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),'my_model_herbal.h5')
+    model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),'model_herbal.h5')
     print('model_path')
     clf = load_model(model_path)
     print('check--model')
