@@ -57,8 +57,8 @@ def predictnab(request):
     print('unit', unit)
     model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),'my_model_herbal.h5')
     clf = load_model(model_path)
-    result = predictNab(clf, img)
-    print('result = ', result)
-    return JsonResponse({
-        'result': str(result[0])
-    })
+    # result = predictNab(clf, img)
+    # print('result = ', result)
+    # return JsonResponse({
+    #     'result': str(result[0])
+    # })
