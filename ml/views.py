@@ -26,8 +26,8 @@ def predictNab(clf, img):
         return np.stack(imgs_arr, axis=0)
 
     # read image
-    pil_image_obj = Image.open(model_instance.image_field)
-    im = Image.open('/content/drive/MyDrive/WhatsApp Image 2021-08-17 at 12.27.34.jpeg')
+    img = Image.open(img)
+    # im = Image.open('/content/drive/MyDrive/WhatsApp Image 2021-08-17 at 12.27.34.jpeg')
     print(im)
     X = preprocess(im,input_size)
     X = reshape([X])
@@ -45,8 +45,8 @@ def index(request):
     return render(request, 'index.html', context)
 
 def predictnab(request):
-    img = request.FILES['my_uploaded_file'].read()
-    img = float(request.POST['ihsg'])
+    img = request.FILES['ihsg'].read()
+    # img = float(request.POST['ihsg'])
     # print >>sys.stderr, 'Goodbye, cruel world!'
     print (img)
     # unit = float(request.POST['unit'])
