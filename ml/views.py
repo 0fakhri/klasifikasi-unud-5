@@ -54,7 +54,7 @@ def predictnab(request):
     # print >>sys.stderr, 'Goodbye, cruel world!'
     print (img)
     unit = float(request.POST['unit'])
-    print(unit)
+    print('unit', unit)
     model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),'my_model_herbal.h5')
     clf = load_model(model_path)
     result = predictNab(clf, img)
