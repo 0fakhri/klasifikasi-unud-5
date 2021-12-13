@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 
 import requests
 from io import BytesIO 
-from PIL import Image
+import Image
 import numpy as np
 
 #def function here
